@@ -1,3 +1,5 @@
+package com.feedback.config;
+
 import com.feedback.config.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
