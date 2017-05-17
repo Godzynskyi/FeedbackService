@@ -2,6 +2,7 @@ package com.feedback.repository.impl;
 
 import com.feedback.entity.FeedbackEntity;
 import com.feedback.repository.FeedbackRepository;
+import com.feedback.repository.config.DbUnitRepositoryTest;
 import com.github.springtestdbunit.annotation.DatabaseSetup;
 import com.github.springtestdbunit.annotation.ExpectedDatabase;
 import org.junit.Test;
@@ -13,7 +14,7 @@ import static org.junit.Assert.assertThat;
 @DatabaseSetup(value = "/dataset/feedback/feedback.xml")
 public class FeedbackRepositoryImplTest extends DbUnitRepositoryTest {
 
-    public static final String FEEDBACK_TEXT = "feedbackText";
+    private static final String FEEDBACK_TEXT = "feedbackText";
 
     @Autowired
     FeedbackRepository sut;

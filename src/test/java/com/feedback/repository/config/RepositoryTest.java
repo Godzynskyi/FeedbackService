@@ -1,4 +1,4 @@
-package com.feedback.repository.impl;
+package com.feedback.repository.config;
 
 
 import config.TestDbConfig;

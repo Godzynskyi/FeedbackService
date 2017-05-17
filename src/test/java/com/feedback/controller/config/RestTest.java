@@ -1,4 +1,4 @@
-package utils;
+package com.feedback.controller.config;
 
 import com.feedback.config.DBConfig;
 import com.feedback.config.WebConfig;

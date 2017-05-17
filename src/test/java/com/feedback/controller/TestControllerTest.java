@@ -2,7 +2,7 @@ package com.feedback.controller;
 
 import org.junit.Test;
 import utils.Json;
-import utils.RestTest;
+import com.feedback.controller.config.RestTest;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;

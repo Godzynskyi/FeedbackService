@@ -1,12 +1,11 @@
-package com.feedback.repository.impl;
+package com.feedback.repository.config;
 
 import com.github.springtestdbunit.DbUnitTestExecutionListener;
-import com.github.springtestdbunit.TransactionDbUnitTestExecutionListener;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.support.DependencyInjectionTestExecutionListener;
 
 @TestExecutionListeners({
         DependencyInjectionTestExecutionListener.class,
         DbUnitTestExecutionListener.class })
-public abstract class DbUnitRepositoryTest extends RepositoryTest{
+public abstract class DbUnitRepositoryTest extends RepositoryTest {
 }
