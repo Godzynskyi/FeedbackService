@@ -57,9 +57,10 @@ public class TestDbConfig {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.h2.Driver");
-        dataSource.setUrl("jdbc:h2:mem:test;DB_CLOSE_DELAY=-1");
-//        dataSource.setUsername("sa");
-//        dataSource.setPassword("");
+        dataSource.setUrl("jdbc:h2:tcp://localhost/~/test");
+//        dataSource.setUrl("jdbc:h2:~/test;DB_CLOSE_DELAY=-1");
+        dataSource.setUsername("sa");
+        dataSource.setPassword("");
 
         return dataSource;
     }
