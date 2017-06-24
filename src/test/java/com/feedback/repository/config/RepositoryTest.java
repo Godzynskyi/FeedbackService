@@ -11,6 +11,6 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {TestDbConfig.class}, loader = AnnotationConfigContextLoader.class)
-@ActiveProfiles("DBtest")
+@ActiveProfiles("DatabaseTest")
 public abstract class RepositoryTest {
 }

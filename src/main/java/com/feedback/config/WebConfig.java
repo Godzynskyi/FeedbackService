@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
 @EnableWebMvc
-@Import(DBConfig.class)
+@Import(PostgresDBConfig.class)
 @ComponentScan("com.feedback")
 public class WebConfig {
 

@@ -24,7 +24,7 @@ public class FeedbackRepositoryImplTest extends DbUnitRepositoryTest {
 
     @Test
     @ExpectedDatabase(value = "/dataset/feedback/feedback.xml")
-    public void shouldCreateAnitDataset() throws Exception {
+    public void shouldCreateInitDataset() throws Exception {
         FeedbackEntity feedback = sut.getFeedback(1L);
 
         assertThat(feedback.getFeedback(), equalTo("Tra ta ta"));
