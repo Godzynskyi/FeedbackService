@@ -8,26 +8,26 @@
         </encoder>
     </appender>
 
-    <appender name="ErrorFile" class="ch.qos.logback.core.FileAppender">
+    <appender name="ERRORFILE" class="ch.qos.logback.core.FileAppender">
         <file>error.log</file>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
         </encoder>
     </appender>
 
-    <appender name="DebugFile" class="ch.qos.logback.core.FileAppender">
+    <appender name="DEBUGFILE" class="ch.qos.logback.core.FileAppender">
         <file>debug.log</file>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
-    <root level="debug">
+    <root name="com.feedback" level="debug" additivity="false">
         <appender-ref ref="STDOUT" />
-        <appender-ref ref="DebugFile" />
+        <appender-ref ref="DEBUGFILE" />
     </root>
 
-    <root level="error">
-        <appender-ref ref="ErrorFile"/>
-    </root>
+    <logger level="error">
+        <appender-ref ref="ERRORFILE"/>
+    </logger>
 </configuration>
